@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 
@@ -21,9 +22,8 @@ body {
 }
 
 /* -- Header -- */
-
 .site-header {
-  height: 144px;
+  height: 80px;
   background: #1F2937;
   display: flex;
   align-items: center;
@@ -38,19 +38,23 @@ body {
   font-weight: 400;
 }
 
-.main-nav ul {
+nav {
   display: flex;
-  list-style: none;
   gap: 16px;
+  align-items: center;
 }
 
-.main-nav a {
+a {
   font-size: 18px;
-  color: #bbbbbb;
+  color: #b8b8b8;
   text-decoration: none;
 }
 
 /* -- Hero Section -- */
+section {
+  padding: 80px 10px;
+}
+
 .hero {
   display: flex;
   background: #1F2937;
@@ -59,6 +63,7 @@ body {
 
 .hero-text {
   flex: 1;
+  padding-left: 50px;
 }
 
 .hero-text h1 {
@@ -87,10 +92,15 @@ body {
 .hero-image {
   flex: 1;
   text-align: center;
+  background-color: gray;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
 }
 
 .hero-image img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -119,7 +129,7 @@ body {
 }
 
 .feature-image {
-  width: 160px;
+  width: 170px;
   height: 160px;
   border: 4px solid #3882f6;
   border-radius: 8px;
@@ -158,14 +168,16 @@ body {
 
 /* -- Call-to-Action Banner -- */
 .cta-banner {
-  background: #3882f6;
-  padding: 48px 0;
+  padding: 64px 0;
 }
 
 .cta-banner .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 100px;
+  justify-content: center;
+  padding: 30px;
+  background: #3882f6;
 }
 
 .cta-text h2 {
